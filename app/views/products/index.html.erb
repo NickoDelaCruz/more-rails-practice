@@ -1,0 +1,14 @@
+<h1>All Games</h1>
+<ul>
+  <% @products.each do |product| %>
+  <li>
+    <%= product.name %>
+    <br>
+    $<%= product.cost %>.00
+    <br>
+    <%= product.id %>
+    <br>
+  </li>
+  <% end %>
+
+</ul>
